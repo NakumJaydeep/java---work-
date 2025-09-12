@@ -1,4 +1,4 @@
-public class ex5 {
+public class pattern_print {
 
     public static void main(String[] args) {
         System.out.println("for loop for the print pattern");

@@ -1,5 +1,5 @@
 import java.util.*;
-public class ex6 {
+public class function {
     
     //two number is sum
    public static int printSum(int a ,int b){

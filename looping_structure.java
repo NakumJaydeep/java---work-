@@ -1,4 +1,4 @@
-public class ex3 {
+public class looping_structure {
     public static void main(String[] args) {
         System.out.println("looping structure");
 

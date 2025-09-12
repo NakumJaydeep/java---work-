@@ -1,6 +1,6 @@
 import java.lang.classfile.instruction.SwitchCase;
 import java.util.*;
-public class ex2 {
+public class conditional_statment {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.println("Conditional Statement");
