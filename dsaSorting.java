@@ -1,12 +1,15 @@
 public class dsaSorting {
-    public static void printArray(int arr[]){
+    public static void printArray(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
+            System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
         // time complexity O(n^2)
+
+        
         //bubble sort
         int arr[] ={9,6,4,8,2};
         int temp=0;
@@ -21,6 +24,7 @@ public class dsaSorting {
             }
         }
         printArray(arr);
+
 
         //selection sort
         int arr1[] = {9,4,6,2,1};
@@ -37,23 +41,21 @@ public class dsaSorting {
         }
         printArray(arr1);
 
-        //inserction sort
-        int arr2[] = {7,8,3,1,2};
-        System.out.println(arr2.length);
 
-        for (int i = 0; i < arr2.length; i++) {
-            int j=i-1;
-            while (j >= 0 && arr2[i] < arr2[j]) {
-                arr2[j+1] = arr2[j];
-                j--;
-            }
-            arr2[j+1]=arr2[i];
-            
-        }
-        printArray(arr2);
+       //insertion sort
+       int arr2[] = {7, 5, 1, 9, 2};
+       System.out.println(arr1.length);
 
-        
-
-
+       for(int i=1; i<arr2.length; i++) {
+           int current = arr2[i];
+           int j = i - 1;
+               while(j >= 0 && arr2[j] > current) {
+                   //Keep swapping
+                   arr2[j+1] = arr2[j];
+                   j--;
+               }
+           arr2[j+1] = current;
+       }
+       printArray(arr2);
     }
 }
